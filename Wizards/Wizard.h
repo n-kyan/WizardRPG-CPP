@@ -42,6 +42,7 @@ class Wizard {
 
         Move& pickMove();
         void printState();
+        void usePassive();
         virtual void printName() = 0;
         virtual void printSchool() = 0;
         

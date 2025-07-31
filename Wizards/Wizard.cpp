@@ -86,6 +86,10 @@ void Wizard::printState() {
     cout << endl;
 }
 
+void Wizard::usePassive() {
+    passiveAbility->use(*this, *this);
+}
+
 // Getters
 uint16_t Wizard::getHealth() const {
     return health;

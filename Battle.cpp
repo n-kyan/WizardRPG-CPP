@@ -19,6 +19,8 @@ void Battle::run() {
 void Battle::playRound() {
 
     p.print("\n===== ROUND " + to_string(roundCount) + " =====\n", "default", "default", BOLD);
+    w1->usePassive();
+    w2->usePassive();
     w1->modPips(1);
     w2->modPips(1);
     printState();
